@@ -1,0 +1,24 @@
+@font-face {
+    font-family: brandon;
+    src: url(~/assets/fonts/brandon/Brandon_bld_it.otf);
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: brandon;
+    src: url(~/assets/fonts/brandon/Brandon_bld.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: brandon;
+    src: url(~/assets/fonts/brandon/Brandon_reg_it.otf);
+    font-style: italic;
+}
+@font-face {
+    font-family: brandon;
+    src: url(~/assets/fonts/brandon/Brandon_reg.otf);
+}
+@font-face {
+    font-family: blackjack;
+    src: url(~/assets/fonts/blackjack.ttf);
+}
