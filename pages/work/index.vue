@@ -12,10 +12,10 @@
 		<div class="container-fluid px-0">
 			<div class="row no-gutters">
 				<div class="col-sm-6 col-md-4 col-xl-3" v-for="w in works">
-					<img class="w-100" :src="w.thumbnail" :alt="w.title">
-					<div class="overlay text-center pointer" @click="$router.push('/work/'+w.title)">
+					<img class="w-100" :src="'/img/work/'+w+'/t.jpg'" :alt="w">
+					<div class="overlay text-center pointer" @click="$router.push('/work/'+w)">
 						<div class="px-3">
-							<h3 class="text-uppercase">{{w.title.split('-').join(' ')}}</h3>
+							<h3 class="text-uppercase">{{w.split('-').join(' ')}}</h3>
 						</div>
 					</div>
 				</div>
@@ -32,8 +32,8 @@ export default {
 		works () {
 			const context = require.context('.', false, /\.vue$/)
 			return context.keys().map(k => context(k)).reduce((arr, comp) => {
-				if (comp.default.workPreview) {
-					arr.push(comp.default.workPreview)
+				if (comp.default.workTitle) {
+					arr.push(comp.default.workTitle)
 				}
 				return arr
 			}, [])
