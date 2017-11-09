@@ -5,7 +5,7 @@
 			<div class="row mb-5">
 				<div class="col-lg-2"></div>
 				<div class="col-lg-8">
-					<p class="text-justify" v-for="d in teamDesc">{{d}}</p>
+					<p v-for="d in teamDesc">{{d}}</p>
 				</div>
 			</div>
 			<div class="row">

@@ -4,9 +4,7 @@
 			<div class="container text-center">
 				<section-header header="SERVICES" sub="SEE OUR SERVICES" cn="服务" />
 			</div>
-			<div class="video-wrapper">
-				<iframe src="https://www.youtube.com/embed/3nzteS7zYhg?rel=0&amp;controls=0&amp;showinfo=0&autoplay=1&loop=1&playlist=3nzteS7zYhg" frameborder="0" allowfullscreen></iframe>
-			</div>
+			<img class="w-100" src="~/assets/img/intro.gif">
 			<!-- START Services breakdown -->
 			<div v-for="(s,index) in services" :class="(index%2===0?'':'bg-light')">
 				<div class="container">
@@ -16,7 +14,7 @@
 							<div class="mr-2"><img width="40" :src="s.icon"></div>
 							<div>
 								<h3 class="text-uppercase">{{s.header}}</h3>
-								<div class="mb-3"><p v-for="t in s.text" class="mb-0 text-justify">{{t}}</p></div>
+								<div class="mb-3"><h5 v-for="t in s.text" class="mb-0 normalLH">{{t}}</h5></div>
 								<h5 class="normalLH mb-0" v-for="k in s.keywords">- {{k}}</h5>
 							</div>
 						</div>
@@ -27,7 +25,7 @@
 			<!-- END Services breakdown -->
 		</div>
 		<div id="service-img-container">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row transparent-row">
 					<div class="col-12 my-auto text-center text-white">
 						<transition enter-active-class="animated fadeInUp" leave-active-class="animated fadeOut">
@@ -62,7 +60,7 @@ export default {
 					icon: '/img/service/video-small.png',
 					header: 'Video production & Photography',
 					text: [
-						'We specialize in developing an initial concept, through storyboarding, filming, editing and post- production to delivery with a digital marketing support package.'
+						'We specialize in developing an initial concept, through storyboarding, filming, editing and post-production to delivery with a digital marketing support package.'
 					],
 					keywords: ['Film', 'Animation', 'Aerial Footage', 'Commercial', 'Personal', 'Corporate Video']
 				},
@@ -73,7 +71,7 @@ export default {
 					text: [
 						'The challenge of China market entry has become an increasingly important one of Western companies of all shapes and sizes. Are you still struggling to get into the Chinese market? We provide efficient solutions to eliminate the cultural barrier and language difficulty.'
 					],
-					keywords: ['Marketing Strategy', 'Cultural Adaptation', 'Social Media Management', 'Government Policies and Regulations']
+					keywords: ['Cultural Adaptation', 'Social Media Management', 'Government Policies and Regulations']
 				},
 				{
 					img: '/img/service/branding.png',
@@ -82,7 +80,7 @@ export default {
 					text: [
 						'One of the best ways to give your business an edge is to give it a consistent look, from your business cards to your website to your advertising materials. We can build your brand from scratch or give your existing brand a facelift. Effective social media success takes effective planning and creative thinking to drive customers to know you.'
 					],
-					keywords: ['Graphic Design', 'Digital Signate', 'Online Marketing Strategy', 'Advertising', 'Web Design', 'Marketing Campaign']
+					keywords: ['Graphic Design', 'Online Marketing Strategy', 'Advertising', 'Web Design', 'Marketing Campaign']
 				}
 			]
 		}

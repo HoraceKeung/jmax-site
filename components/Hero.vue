@@ -5,7 +5,7 @@
 				<div class="col-12 my-auto">
 					<img class="img-fluid d-block d-md-none" src="~/assets/img/newlogo-mobile.png" alt="JMaxMedia">
 					<img class="img-fluid d-none d-md-block" src="~/assets/img/newlogo.png" alt="JMaxMedia">
-					<h4 class="normalLH text-white hero-text mx-2 text-justify">JMAX MEDIA is a creative video production company founded in 2016, based in China and the UK. We specialize in developing an initial concept, through storyboarding, filming, editing and post- production to delivery with a digital marketing support package.</h4>
+					<h4 class="normalLH text-white hero-text mx-2">JMAX MEDIA is a full service video production and graphic design company based in the UK and China. We specialise in creating original branding solutions that resonate and engage with an international audience.</h4>
 					<button @click="$router.push('/work')" class="btn btn-jmax font-weight-bold mx-md-2 d-block mx-auto" type="button">OUR WORK</button>
 				</div>
 			</div>

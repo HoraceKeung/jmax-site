@@ -11,7 +11,7 @@
 			</div>
 		</div>
 		<div id="get-in-touch-div">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row transparent-row">
 					<div class="col-12 my-auto text-center text-white">
 						<transition enter-active-class="animated fadeInUp" leave-active-class="animated fadeOut">

@@ -99,6 +99,7 @@ h4 {
 }
 a, a:visited, a:hover, a:active {
   color: inherit;
+	text-decoration: none;
 }
 button:disabled {
 	cursor: no-drop;
@@ -167,11 +168,15 @@ button:disabled {
 .o-50 {
 	opacity: 0.5;
 }
+.hover60 {
+	transition: opacity .15s ease-in-out;
+}
 .hover60:hover {
 	opacity: 0.6;
 }
 .transparent-row {
 	height: 500px;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 .vh-100 {
 	height: 100vh;
@@ -197,6 +202,6 @@ button:disabled {
 	padding-top: 6rem !important;
 }
 .backtube-cover {
-	background-color: transparent !important;
+	background-color: rgba(0, 0, 0, 0.2) !important;
 }
 </style>

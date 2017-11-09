@@ -20,17 +20,8 @@
 
 <script>
 export default {
-	data () {
-		return {
-			links: [
-				{ name: 'home', path: '/' },
-				{ name: 'our work', path: '/work' },
-				{ name: 'our team', path: '/team' },
-				{ name: 'contact', path: '/contact' }
-			]
-		}
-	},
 	computed: {
+		links () { return this.$store.state.links },
 		isShowLogo () {
 			return this.$store.state.scrollTop > 0
 		}
