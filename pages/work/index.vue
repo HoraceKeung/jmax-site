@@ -42,7 +42,12 @@ export default {
 	data () {
 		return {
 			workDesc: [
-				'JMAX MEDIA is a creative video production company founded in 2016, based in China and the UK. We specialize in developing an initial concept, through storyboarding, filming, editing and post- production to delivery with a digital marketing support package. We have been working in close collaboration with certain fantastic British companies and Chinese companies involved in DITS, distribution, production, post-production, visual effects, international sales and film investment. This relationship differentiates JMAX MEDIA from its competitors, providing a steady stream of projects but also the ability to provide an array of services through these companies that other editing companies could not.We have been making a lot of high-quality advertisements, music video and films.'
+				'JMAX MEDIA is a full service video production and graphic design company based in the UK and China. We specialise in creating original branding solutions that resonate and engage with an international audience.',
+				'We can design or reimagine your brand, from a logo and colour scheme to company stationary and social media presence, in collaboration with our video production and promotion services.',
+				'For every video we develop an initial concept, through storyboarding, filming, editing and post-production to delivery with a digital marketing support package.',
+				'We take our time to get to know you, your brand and what you hope to achieve. Whether you’re just starting out or are a household name, we can tailor our services to suit your specification and budget.',
+				'There is no better promotion than by word of mouth. We work with you to fully understand your target market, and use unique strategies to boost your company’s presence on social media and beyond.',
+				'We look forward to working with you soon.'
 			]
 		}
 	}

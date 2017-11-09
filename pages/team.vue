@@ -29,15 +29,16 @@ export default {
 		return {
 			currentHover: null,
 			teamDesc: [
-				'We have a brilliant team with great passion and creativity, most of whom are very experienced in post-production. And we love working with brands to create brand communication films that resonate and engage. We are versatile, adaptable, understanding and care about you and what you’re trying to achieve.',
-				'On top of this, our highly talented team know how to get the most out of your budget. We are a full service video production company, with a complete in-house team. This means we are fast, reliable and always looking for ways to create the most efficient workflow and maximise the effectiveness of your whole project.'
+				'We have a complete in-house team bursting with creativity, enthusiasm and a strong motivation to achieve the best possible end product. We are versatile, adaptable and understanding, and treat every project as if it were our own.',
+				'Each member of the team has a wealth of experience in their chosen fields and valuable industry connections unrivalled by others. We work with fantastic British and Chinese companies involved in DITS, film production and post-production, distribution, international sales and investment. This relationship differentiates JMAX MEDIA from its competitors, with the ability to provide additional services that other creative companies cannot. Our studio in Brighton also has its own camera crew and post production suite.',
+				'We are fast, reliable and always looking for ways to improve the efficiency of our workflow. We believe that the best way to maximise the success of your project is close collaboration and to fine-tune every detail, with the bigger picture firmly in mind.'
 			],
 			teamMember: [
 				{
 					name: 'MIKE CHEN',
 					role: ['UNKNOWN ROLE'],
 					img: '/img/team/Mike.jpg',
-					imgHover: '/img/team/tang.gif',
+					imgHover: '/img/team/mike.gif',
 					desc: 'Have a dry sense of humor. Quote: Dream big, shine bright.'
 				},
 				{
@@ -51,7 +52,7 @@ export default {
 					name: 'JAMES BLAY',
 					role: ['UNKNOWN ROLE'],
 					img: '/img/team/James.jpg',
-					imgHover: '/img/team/tang.gif',
+					imgHover: '/img/team/james.gif',
 					desc: 'Like a stick of rock, bite one down and you’ll still read Brighton.'
 				},
 				{

@@ -25,16 +25,12 @@ export default {
 		return {
 			social: [
 				{
-					icon: 'fa-facebook-square',
-					href: 'https://www.facebook.com'
-				},
-				{
 					icon: 'fa-instagram',
 					href: 'https://www.instagram.com/jmaxmediauk/'
 				},
 				{
 					icon: 'fa-youtube-square',
-					href: 'https://www.youtube.com/channel/UCljekXZi3O6CbGGrvqw5Gag'
+					href: 'https://www.youtube.com/channel/UCljekXZi3O6CbGGrvqw5Gag/videos'
 				}
 			]
 		}

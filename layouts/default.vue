@@ -13,7 +13,10 @@ export default {
 	components: {MenuBar, PageFooter},
 	methods: {
 		handleScroll: function () {
-			this.$store.commit('SET_SCROLL_TOP', document.documentElement.scrollTop)
+			var supportPageOffset = window.pageXOffset !== undefined
+			var isCSS1Compat = ((document.compatMode || '') === 'CSS1Compat')
+			var y = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop
+			this.$store.commit('SET_SCROLL_TOP', y)
 		}
 	},
 	mounted: function () {
@@ -153,6 +156,7 @@ button:disabled {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: opacity .15s ease-in-out;
 }
 .overlay:hover{
 	opacity: 1;

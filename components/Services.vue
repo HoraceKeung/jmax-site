@@ -3,33 +3,22 @@
 		<div class="bg-white pt-6">
 			<div class="container text-center">
 				<section-header header="SERVICES" sub="SEE OUR SERVICES" cn="服务" />
-				<!-- <div class="row mb-5">
-					<div class="col-md-2"></div>
-					<div class="col-md-8">
-						<div class="video-wrapper">
-							<iframe src="https://www.youtube.com/embed/LuB3MSiSRn0?rel=0" frameborder="0" allowfullscreen></iframe>
-						</div>
-					</div>
-				</div> -->
+			</div>
+			<div class="video-wrapper">
+				<iframe src="https://www.youtube.com/embed/3nzteS7zYhg?rel=0&amp;controls=0&amp;showinfo=0&autoplay=1&loop=1&playlist=3nzteS7zYhg" frameborder="0" allowfullscreen></iframe>
 			</div>
 			<!-- START Services breakdown -->
-			<div v-for="(s,index) in services" :style="'background-color: '+s.bgColor+';'">
+			<div v-for="(s,index) in services" :class="(index%2===0?'':'bg-light')">
 				<div class="container">
 					<div class="row py-6">
 						<div v-if="index%2!==0" class="col-lg-5 d-none d-lg-block my-auto"><img class='w-100' :src="s.img"></div>
 						<div class="col-lg-7 d-flex mb-5 mb-lg-0">
-							<div :class="+index%2!==0?' d-lg-none':''"><img width="40" :src="s.icon"></div>
-							<div class="ml-2">
-								<h3 :class="'text-uppercase d-none d-lg-block'+(index%2===0?' text-left':' text-right')">{{s.header}}</h3>
-								<h3 class="text-uppercase d-lg-none text-left">{{s.header}}</h3>
-								<div class="mb-3"><div v-for="t in s.text">
-									<p :class="'mb-0 d-none d-lg-block'+(index%2===0?' text-justify':' text-justify')">{{t}}</p>
-									<p class="mb-0 d-lg-none text-justify">{{t}}</p>
-								</div></div>
-								<h5 :class="'normalLH mb-0 d-none d-lg-block'+(index%2===0?' text-justify':' text-left')" v-for="k in s.keywords">- {{k}}</h5>
-								<h5 class="normalLH mb-0 d-block d-lg-none text-justify " v-for="k in s.keywords">{{k}}</h5>
+							<div class="mr-2"><img width="40" :src="s.icon"></div>
+							<div>
+								<h3 class="text-uppercase">{{s.header}}</h3>
+								<div class="mb-3"><p v-for="t in s.text" class="mb-0 text-justify">{{t}}</p></div>
+								<h5 class="normalLH mb-0" v-for="k in s.keywords">- {{k}}</h5>
 							</div>
-							<div v-if="index%2!==0" class="d-none d-lg-block"><img width="40" :src="s.icon"></div>
 						</div>
 						<div :class="'col-lg-5 my-auto'+(index%2!==0?' d-lg-none':'')"><img class='w-100' :src="s.img"></div>
 					</div>
@@ -75,8 +64,7 @@ export default {
 					text: [
 						'We specialize in developing an initial concept, through storyboarding, filming, editing and post- production to delivery with a digital marketing support package.'
 					],
-					keywords: ['Film', 'Animation', 'Aerial Footage', 'Commercial', 'Personal', 'Corporate Video'],
-					bgColor: '#f4f5f6'
+					keywords: ['Film', 'Animation', 'Aerial Footage', 'Commercial', 'Personal', 'Corporate Video']
 				},
 				{
 					img: '/img/service/chinese-market.png',
@@ -85,8 +73,7 @@ export default {
 					text: [
 						'The challenge of China market entry has become an increasingly important one of Western companies of all shapes and sizes. Are you still struggling to get into the Chinese market? We provide efficient solutions to eliminate the cultural barrier and language difficulty.'
 					],
-					keywords: ['Marketing Strategy', 'Cultural Adaptation', 'Social Media Management', 'Government Policies and Regulations'],
-					bgColor: '#ffffff'
+					keywords: ['Marketing Strategy', 'Cultural Adaptation', 'Social Media Management', 'Government Policies and Regulations']
 				},
 				{
 					img: '/img/service/branding.png',
@@ -95,8 +82,7 @@ export default {
 					text: [
 						'One of the best ways to give your business an edge is to give it a consistent look, from your business cards to your website to your advertising materials. We can build your brand from scratch or give your existing brand a facelift. Effective social media success takes effective planning and creative thinking to drive customers to know you.'
 					],
-					keywords: ['Graphic Design', 'Digital Signate', 'Online Marketing Strategy', 'Advertising', 'Web Design', 'Marketing Campaign'],
-					bgColor: '#f4f5f6'
+					keywords: ['Graphic Design', 'Digital Signate', 'Online Marketing Strategy', 'Advertising', 'Web Design', 'Marketing Campaign']
 				}
 			]
 		}
