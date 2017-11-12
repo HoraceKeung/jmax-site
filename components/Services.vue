@@ -2,7 +2,7 @@
 	<div id="services-div">
 		<div class="bg-white pt-6">
 			<div class="container text-center">
-				<section-header header="SERVICES" sub="SEE OUR SERVICES" cn="服务" />
+				<section-header :header="lang[1]" sub="SEE OUR SERVICES" cn="服务" />
 			</div>
 			<img class="w-100" src="~/assets/img/intro.gif">
 			<!-- START Services breakdown -->
@@ -13,9 +13,9 @@
 						<div class="col-lg-7 d-flex mb-5 mb-lg-0">
 							<div class="mr-2"><img width="40" :src="s.icon"></div>
 							<div>
-								<h3 class="text-uppercase">{{s.header}}</h3>
-								<div class="mb-3"><h5 v-for="t in s.text" class="mb-0 normalLH">{{t}}</h5></div>
-								<h5 class="normalLH mb-0" v-for="k in s.keywords">- {{k}}</h5>
+								<h3 class="text-uppercase">{{lang[s.header]}}</h3>
+								<div class="mb-3"><h5 v-for="t in s.text" class="mb-0 normalLH">{{lang[t]}}</h5></div>
+								<h5 class="normalLH mb-0" v-for="k in s.keywords">- {{lang[k]}}</h5>
 							</div>
 						</div>
 						<div :class="'col-lg-5 my-auto'+(index%2!==0?' d-lg-none':'')"><img class='w-100' :src="s.img"></div>
@@ -31,7 +31,7 @@
 						<transition enter-active-class="animated fadeInUp" leave-active-class="animated fadeOut">
 							<div v-show="isShowServiceImg">
 								<h2>LET'S WORK WITH OUR AWARD WINNING TEAM</h2>
-								<button @click="$router.push('/team')" class="btn btn-jmax font-weight-bold m-auto d-block" type="button">OUR TEAM</button>
+								<button @click="$router.push('/team')" class="btn btn-jmax font-weight-bold m-auto d-block" type="button">{{lang[29]}}</button>
 							</div>
 						</transition>
 					</div>
@@ -48,9 +48,8 @@ export default {
 	components: {SectionHeader},
 	methods: {...util},
 	computed: {
-		isShowServiceImg () {
-			return util.animateIsShow('service-img-container', this.$store)
-		}
+		isShowServiceImg () { return util.animateIsShow('service-img-container', this.$store) },
+		lang () { return this.$store.state.lang }
 	},
 	data () {
 		return {
@@ -58,29 +57,23 @@ export default {
 				{
 					img: '/img/service/video.png',
 					icon: '/img/service/video-small.png',
-					header: 'Video production & Photography',
-					text: [
-						'We specialize in developing an initial concept, through storyboarding, filming, editing and post-production to delivery with a digital marketing support package.'
-					],
-					keywords: ['Film', 'Animation', 'Aerial Footage', 'Commercial', 'Personal', 'Corporate Video']
+					header: 2,
+					text: [3],
+					keywords: [4, 5, 6, 7, 8, 9]
 				},
 				{
 					img: '/img/service/chinese-market.png',
 					icon: '/img/service/chinese-market-small.png',
-					header: 'Chinese Market entry Strategy',
-					text: [
-						'The challenge of China market entry has become an increasingly important one of Western companies of all shapes and sizes. Are you still struggling to get into the Chinese market? We provide efficient solutions to eliminate the cultural barrier and language difficulty.'
-					],
-					keywords: ['Cultural Adaptation', 'Social Media Management', 'Government Policies and Regulations']
+					header: 10,
+					text: [11],
+					keywords: [12, 13, 14]
 				},
 				{
 					img: '/img/service/branding.png',
 					icon: '/img/service/branding-small.png',
-					header: 'Branding',
-					text: [
-						'One of the best ways to give your business an edge is to give it a consistent look, from your business cards to your website to your advertising materials. We can build your brand from scratch or give your existing brand a facelift. Effective social media success takes effective planning and creative thinking to drive customers to know you.'
-					],
-					keywords: ['Graphic Design', 'Online Marketing Strategy', 'Advertising', 'Web Design', 'Marketing Campaign']
+					header: 15,
+					text: [16],
+					keywords: [17, 18, 19, 20, 21]
 				}
 			]
 		}

@@ -5,8 +5,8 @@
 				<div class="col-12 my-auto">
 					<img class="img-fluid d-block d-md-none" src="~/assets/img/newlogo-mobile.png" alt="JMaxMedia">
 					<img class="img-fluid d-none d-md-block" src="~/assets/img/newlogo.png" alt="JMaxMedia">
-					<h4 class="normalLH text-white hero-text mx-2">JMAX MEDIA is a full service video production and graphic design company based in the UK and China. We specialise in creating original branding solutions that resonate and engage with an international audience.</h4>
-					<button @click="$router.push('/work')" class="btn btn-jmax font-weight-bold mx-md-2 d-block mx-auto" type="button">OUR WORK</button>
+					<h4 class="normalLH text-white hero-text mx-2">{{lang[0]}}</h4>
+					<button @click="$router.push('/work')" class="btn btn-jmax font-weight-bold mx-md-2 d-block mx-auto" type="button">{{lang[22]}}</button>
 				</div>
 			</div>
 		</div>
@@ -21,9 +21,8 @@ import util from '~/assets/util'
 import BackTube from 'back-tube'
 export default {
 	computed: {
-		isShowShadow () {
-			return this.$store.state.scrollTop === 0
-		}
+		isShowShadow () { return this.$store.state.scrollTop === 0 },
+		lang () { return this.$store.state.lang }
 	},
 	methods: {...util},
 	data () {

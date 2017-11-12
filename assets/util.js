@@ -1,7 +1,7 @@
 var currentScrollTo = null
 
 const util = {
-	scrollTo: function (id, offset = 150, oldTop) {
+	scrollTo (id, offset = 150, oldTop) {
 		const scroll = function () {
 			const rect = document.getElementById(id).getBoundingClientRect()
 			if (((rect.top - offset) > 1 || (rect.top - offset) < -1) && oldTop !== rect.top) {
@@ -18,13 +18,18 @@ const util = {
 			scroll()
 		}
 	},
-	animateIsShow: function (id, store, offset = 150) {
+	animateIsShow (id, store, offset = 150) {
 		if (typeof document === 'undefined') {
 			return false
 		} else if (store.state.scrollTop > 0) {
 			var rect = document.getElementById(id).getBoundingClientRect()
 			return rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + offset
 		}
+	},
+	setLang (store, l) {
+		const arr = require('../static/languages/' + l + '.json')
+		store.commit('SET_LANG', arr)
+		window.scrollTo(0, 0)
 	}
 }
 

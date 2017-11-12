@@ -45,5 +45,6 @@ module.exports = {
     },
 	css: [
 		{ src: 'font-awesome/css/font-awesome.css', lang: 'css' }
-	]
+	],
+	plugins: ['~/plugins/lang.js']
 }

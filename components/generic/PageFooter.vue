@@ -4,7 +4,7 @@
 			<div class="row mb-4">
 				<div class="col-md-3 mb-3 mb-md-0">
 					<h4 class="font-weight-bold">LINKS</h4>
-					<router-link :to="l.path" v-for="l in links" class="text-capitalize d-block hover60 mb-1">{{l.name}}</router-link>
+					<router-link :to="l.path" v-for="l in links" :key="l.path" class="text-capitalize d-block hover60 mb-1">{{l.name}}</router-link>
 				</div>
 				<div class="col-md-3 mb-3 mb-md-0">
 					<h4 class="font-weight-bold">FOLLOW US</h4>
@@ -19,12 +19,18 @@
 					<p><strong>Email: </strong><a href="mailto:jmaxmedia@jmaxmedia.co.uk" class="mb-0 d-inline">jmaxmedia@jmaxmedia.co.uk</a></p>
 				</div>
 			</div>
-			<div class="text-center"><small>© {{currentYear}} JMAX MEDIA All rights reserved</small></div>
+			<div class="d-flex">
+				<div><small>© {{currentYear}} JMAX MEDIA All rights reserved</small></div>
+				<div class="ml-auto d-block">
+					<small v-for="(l,index) in langNames" class="pointer hover60 text-capitalize" @click="setLang($store, l)">{{l+((index < langNames.length-1)?' | ':'')}}</small>
+				</div>
+			</div>
 		</div>
 	</footer>
 </template>
 
 <script>
+import util from '~/assets/util'
 export default {
 	computed: {
 		currentYear () {
@@ -32,7 +38,8 @@ export default {
 			return d.getFullYear()
 		},
 		address () { return this.$store.state.address },
-		links () { return this.$store.state.links }
+		links () { return this.$store.state.links },
+		langNames () { return this.$store.state.langNames }
 	},
 	data () {
 		return {
@@ -51,7 +58,8 @@ export default {
 				}
 			]
 		}
-	}
+	},
+	methods: {...util}
 }
 </script>
 
