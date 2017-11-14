@@ -6,4 +6,5 @@ export default ({store}) => {
 	store.commit('SET_LANG_NAMES', langs)
 	const arr = require('../static/languages/english.json')
 	store.commit('SET_LANG', arr)
+	store.commit('SET_CURRENT_LANG_NAME', 'english')
 }

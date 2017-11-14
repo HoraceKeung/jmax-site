@@ -29,7 +29,7 @@ const util = {
 	setLang (store, l) {
 		const arr = require('../static/languages/' + l + '.json')
 		store.commit('SET_LANG', arr)
-		window.scrollTo(0, 0)
+		store.commit('SET_CURRENT_LANG_NAME', l)
 	}
 }
 

@@ -9,8 +9,11 @@
 				<ul :class="'navbar-nav '+(isShowLogo?'ml-auto':'m-auto')">
 					<li :class="'nav-item'+(isShowLogo?' mr-2':' mx-lg-3')" v-for="l in links">
 						<router-link :to="l.path">
-							<span class="text-white nav-link font-weight-bold text-uppercase pointer">{{l.name}}</span>
+							<span class="text-white nav-link font-weight-bold text-uppercase pointer">{{lang[l.name]}}</span>
 						</router-link>
+					</li>
+					<li :class="'nav-item'+(isShowLogo?' mr-2':' mx-lg-3')">
+						<button type="button" class="btn btn-jmax text-capitalize" @click="setLang($store, currentLangName==='english'?'简体中文':'english')">{{currentLangName==='english'?'简体中文':'english'}}</button>
 					</li>
 				</ul>
 			</div>
@@ -19,13 +22,15 @@
 </template>
 
 <script>
+import util from '~/assets/util'
 export default {
 	computed: {
 		links () { return this.$store.state.links },
-		isShowLogo () {
-			return this.$store.state.scrollTop > 0
-		}
-	}
+		isShowLogo () { return this.$store.state.scrollTop > 0 },
+		currentLangName () { return this.$store.state.currentLangName },
+		lang () { return this.$store.state.lang }
+	},
+	methods: {...util}
 }
 </script>
 

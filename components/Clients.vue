@@ -18,7 +18,7 @@
 							<div v-show="isShowGetInTouch">
 								<h2>WE CAN TAILOR A SOLUTION TO MEET YOUR NEEDS</h2>
 								<h2>我们一定会竭尽所能</h2>
-								<button @click="$router.push('/contact')" class="btn btn-jmax font-weight-bold m-auto d-block" type="button">GET IN TOUCH NOW</button>
+								<button @click="$router.push('/contact')" class="btn btn-jmax font-weight-bold m-auto d-block text-uppercase" type="button">GET IN TOUCH NOW</button>
 							</div>
 						</transition>
 					</div>

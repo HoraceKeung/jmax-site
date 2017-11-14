@@ -55,7 +55,7 @@ html {
   box-sizing: border-box;
 }
 body {
-	font-family: brandon;
+	font-family: futura;
 	color: #000;
 }
 *, *:before, *:after {

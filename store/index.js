@@ -4,6 +4,7 @@ const createStore = () => {
 	return new Vuex.Store({
 		state: {
 			lang: null,
+			currentLangName: null,
 			langNames: null,
 			scrollTop: 0,
 			address: [
@@ -13,10 +14,10 @@ const createStore = () => {
 				'BN1 4DU'
 			],
 			links: [
-				{ name: 'home', path: '/' },
-				{ name: 'our work', path: '/work' },
-				{ name: 'our team', path: '/team' },
-				{ name: 'contact', path: '/contact' }
+				{ name: 35, path: '/' },
+				{ name: 22, path: '/work' },
+				{ name: 29, path: '/team' },
+				{ name: 34, path: '/contact' }
 			]
 		},
 		mutations: {
@@ -25,6 +26,9 @@ const createStore = () => {
 			},
 			SET_LANG (state, arr) {
 				state.lang = arr
+			},
+			SET_CURRENT_LANG_NAME (state, name) {
+				state.currentLangName = name
 			},
 			SET_LANG_NAMES (state, names) {
 				state.langNames = names

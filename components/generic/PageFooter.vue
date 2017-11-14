@@ -3,8 +3,8 @@
 		<div class="container pt-5 pb-3">
 			<div class="row mb-4">
 				<div class="col-md-3 mb-3 mb-md-0">
-					<h4 class="font-weight-bold">LINKS</h4>
-					<router-link :to="l.path" v-for="l in links" :key="l.path" class="text-capitalize d-block hover60 mb-1">{{l.name}}</router-link>
+					<h4 class="font-weight-bold text-uppercase">{{lang[33]}}</h4>
+					<router-link :to="l.path" v-for="l in links" :key="l.path" class="text-capitalize d-block hover60 mb-1">{{lang[l.name]}}</router-link>
 				</div>
 				<div class="col-md-3 mb-3 mb-md-0">
 					<h4 class="font-weight-bold">FOLLOW US</h4>
@@ -16,8 +16,8 @@
 				</div>
 				<div class="col-md-3">
 					<h4 class="font-weight-bold">GET IN TOUCH</h4>
-					<p><strong>Email: </strong><a href="mailto:jmaxmedia@jmaxmedia.co.uk" class="mb-0 d-inline">jmaxmedia@jmaxmedia.co.uk</a></p>
-					<p><strong>Phone: </strong><a class="mb-0 d-inline">07903 919510</a></p>
+					<p class="mb-1"><strong>Email: </strong><a href="mailto:jmaxmedia@jmaxmedia.co.uk">jmaxmedia@jmaxmedia.co.uk</a></p>
+					<p class="mb-1"><strong>Phone: </strong>07903 919510</p>
 				</div>
 			</div>
 			<div class="d-flex">
@@ -40,7 +40,8 @@ export default {
 		},
 		address () { return this.$store.state.address },
 		links () { return this.$store.state.links },
-		langNames () { return this.$store.state.langNames }
+		langNames () { return this.$store.state.langNames },
+		lang () { return this.$store.state.lang }
 	},
 	data () {
 		return {
@@ -56,15 +57,15 @@ export default {
 				{
 					icon: 'fa-weibo',
 					href: 'https://www.weibo.com/6379340233/profile?topnav=1&wvr=6&is_all=1'
-				},
-				{
-					icon: 'fa-weixin',
-					href: ''
-				},
-				{
-					icon: 'fa-facebook',
-					href: ''
 				}
+				// {
+				// 	icon: 'fa-weixin',
+				// 	href: ''
+				// },
+				// {
+				// 	icon: 'fa-facebook',
+				// 	href: ''
+				// }
 			]
 		}
 	},

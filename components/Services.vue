@@ -32,7 +32,7 @@
 						<transition enter-active-class="animated fadeInUp" leave-active-class="animated fadeOut">
 							<div v-show="isShowServiceImg">
 								<h2>LET'S WORK WITH OUR AWARD WINNING TEAM</h2>
-								<button @click="$router.push('/team')" class="btn btn-jmax font-weight-bold m-auto d-block" type="button">{{lang[29]}}</button>
+								<button @click="$router.push('/team')" class="btn btn-jmax font-weight-bold m-auto d-block text-uppercase" type="button">{{lang[29]}}</button>
 							</div>
 						</transition>
 					</div>
