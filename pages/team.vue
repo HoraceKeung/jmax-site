@@ -44,7 +44,7 @@ export default {
 					name: 'MICHELLE YANG',
 					role: ['UNKNOWN ROLE'],
 					img: '/img/team/Michelle.jpg',
-					imgHover: '/img/team/tang.gif',
+					imgHover: '/img/team/michelle.gif',
 					desc: 'The one and only “Internet celebrity” in our company, always dress well.'
 				},
 				{

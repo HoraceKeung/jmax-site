@@ -4,7 +4,8 @@
 			<div class="container text-center">
 				<section-header :header="lang[1]" sub="SEE OUR SERVICES" cn="服务" />
 			</div>
-			<img class="w-100" src="~/assets/img/intro.gif">
+			<img class="w-100 d-none d-lg-block" src="~/assets/img/intro.gif">
+			<img class="w-100 d-lg-none" src="~/assets/img/intro-mobile.gif">
 			<!-- START Services breakdown -->
 			<div v-for="(s,index) in services" :class="(index%2===0?'':'bg-light')">
 				<div class="container">
