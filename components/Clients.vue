@@ -47,7 +47,9 @@ export default {
 				'fantomeline',
 				'fs',
 				'lse',
-				'zige'
+				'zige',
+				'art',
+				'maximum'
 			]
 		}
 	}

@@ -17,6 +17,7 @@
 				<div class="col-md-3">
 					<h4 class="font-weight-bold">GET IN TOUCH</h4>
 					<p><strong>Email: </strong><a href="mailto:jmaxmedia@jmaxmedia.co.uk" class="mb-0 d-inline">jmaxmedia@jmaxmedia.co.uk</a></p>
+					<p><strong>Phone: </strong><a class="mb-0 d-inline">07903 919510</a></p>
 				</div>
 			</div>
 			<div class="d-flex">
@@ -55,6 +56,14 @@ export default {
 				{
 					icon: 'fa-weibo',
 					href: 'https://www.weibo.com/6379340233/profile?topnav=1&wvr=6&is_all=1'
+				},
+				{
+					icon: 'fa-weixin',
+					href: ''
+				},
+				{
+					icon: 'fa-facebook',
+					href: ''
 				}
 			]
 		}
