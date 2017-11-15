@@ -8,7 +8,7 @@
 import SpecificWork from '~/components/generic/SpecificWork'
 export default {
 	components: {SpecificWork},
-	workTitle: 'christmas-ad', // workTitle is required for each work
+	workTitle: 'branding-design', // workTitle is required for each work
 	data () {
 		return {
 			text: [''],
