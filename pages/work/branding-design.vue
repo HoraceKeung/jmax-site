@@ -13,7 +13,7 @@ export default {
 		return {
 			text: [''],
 			vid: ['yBDOuBFPQeE', 'IeAyxWFo6rs', '17l-EhGB6Hs'],
-			img: 3
+			img: 0
 		}
 	}
 }

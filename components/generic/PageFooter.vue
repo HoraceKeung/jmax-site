@@ -7,17 +7,17 @@
 					<router-link :to="l.path" v-for="l in links" :key="l.path" class="text-capitalize d-block hover60 mb-1">{{lang[l.name]}}</router-link>
 				</div>
 				<div class="col-md-3 mb-3 mb-md-0">
-					<h4 class="font-weight-bold">FOLLOW US</h4>
+					<h4 class="font-weight-bold text-uppercase">{{lang[38]}}</h4>
 					<a v-for="s in social" :href="s.href" target="_blank" class="mr-2"><i :class="'hover60 fa fa-2x '+s.icon" aria-hidden="true"></i></a>
 				</div>
 				<div class="col-md-3 mb-3 mb-md-0">
-					<h4 class="font-weight-bold">ADDRESS</h4>
+					<h4 class="font-weight-bold text-uppercase">{{lang[39]}}</h4>
 					<p v-for="a in address" class="mb-1">{{a}}</p>
 				</div>
 				<div class="col-md-3">
-					<h4 class="font-weight-bold">GET IN TOUCH</h4>
-					<p class="mb-1"><strong>Email: </strong><a href="mailto:jmaxmedia@jmaxmedia.co.uk">jmaxmedia@jmaxmedia.co.uk</a></p>
-					<p class="mb-1"><strong>Phone: </strong>07903 919510</p>
+					<h4 class="font-weight-bold text-uppercase">{{lang[40]}}</h4>
+					<p class="mb-1"><strong class="text-capitalize">{{lang[41]}}: </strong><a href="mailto:jmaxmedia@jmaxmedia.co.uk">jmaxmedia@jmaxmedia.co.uk</a></p>
+					<p class="mb-1"><strong class="text-capitalize">{{lang[42]}}: </strong>07903 919510</p>
 				</div>
 			</div>
 			<div class="d-flex">

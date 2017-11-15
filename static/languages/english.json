@@ -35,10 +35,11 @@
     "links",
 	"contact",
 	"home",
-  "CLIENTS",
-  "get in touch now",
-  "follow us",
-  "address",
-  "get in touch"
-
+	"clients",
+	"get in touch now",
+	"follow us",
+	"address",
+	"get in touch",
+	"email",
+	"phone"
 ]
