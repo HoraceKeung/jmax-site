@@ -7,16 +7,16 @@
 			<img class="w-100 d-none d-lg-block" src="~/assets/img/intro.gif">
 			<img class="w-100 d-lg-none" src="~/assets/img/intro-mobile.gif">
 			<!-- START Services breakdown -->
-			<div v-for="(s,index) in services" :class="(index%2===0?'':'bg-light')">
+			<div v-for="(s,index) in services">
 				<div class="container">
-					<div class="row py-6">
+					<div :class="'row py-6'+(index!==0?' border border-light border-right-0 border-bottom-0 border-left-0':'')">
 						<div v-if="index%2!==0" class="col-lg-5 d-none d-lg-block my-auto"><img class='w-100' :src="s.img"></div>
 						<div class="col-lg-7 d-flex mb-5 mb-lg-0">
 							<div class="mr-2"><img width="40" :src="s.icon"></div>
 							<div>
 								<h3 class="text-uppercase">{{lang[s.header]}}</h3>
-								<div class="mb-3"><h5 v-for="t in s.text" class="mb-0 normalLH">{{lang[t]}}</h5></div>
-								<h5 class="normalLH mb-0" v-for="k in s.keywords">- {{lang[k]}}</h5>
+								<div class="mb-3"><h4 v-for="t in s.text" class="mb-0 normalLH">{{lang[t]}}</h4></div>
+								<h4 class="normalLH mb-0" v-for="k in s.keywords">- {{lang[k]}}</h4>
 							</div>
 						</div>
 						<div :class="'col-lg-5 my-auto'+(index%2!==0?' d-lg-none':'')"><img class='w-100' :src="s.img"></div>
@@ -31,7 +31,7 @@
 					<div class="col-12 my-auto text-center text-white">
 						<transition enter-active-class="animated fadeInUp" leave-active-class="animated fadeOut">
 							<div v-show="isShowServiceImg">
-								<h2>LET'S WORK WITH OUR AWARD WINNING TEAM</h2>
+								<h2>{{lang[43]}}</h2>
 								<button @click="$router.push('/team')" class="btn btn-jmax font-weight-bold m-auto d-block text-uppercase" type="button">{{lang[29]}}</button>
 							</div>
 						</transition>

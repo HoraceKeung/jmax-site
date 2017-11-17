@@ -16,8 +16,7 @@
 					<div class="col-12 my-auto text-center text-white">
 						<transition enter-active-class="animated fadeInUp" leave-active-class="animated fadeOut">
 							<div v-show="isShowGetInTouch">
-								<h2>WE CAN TAILOR A SOLUTION TO MEET YOUR NEEDS</h2>
-								<h2>我们一定会竭尽所能</h2>
+								<h2>{{lang[44]}}</h2>
 								<button @click="$router.push('/contact')" class="btn btn-jmax font-weight-bold m-auto d-block text-uppercase" type="button">{{lang[37]}}</button>
 							</div>
 						</transition>

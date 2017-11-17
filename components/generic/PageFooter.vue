@@ -1,7 +1,7 @@
 <template>
 	<footer class="footer" id="footer">
-		<div class="container pt-5 pb-3">
-			<div class="row mb-4">
+		<div class="container pt-6 pb-3">
+			<div class="row mb-5 ">
 				<div class="col-md-3 mb-3 mb-md-0">
 					<h4 class="font-weight-bold text-uppercase">{{lang[33]}}</h4>
 					<router-link :to="l.path" v-for="l in links" :key="l.path" class="text-capitalize d-block hover60 mb-1">{{lang[l.name]}}</router-link>
@@ -20,7 +20,7 @@
 					<p class="mb-1"><strong class="text-capitalize">{{lang[42]}}: </strong>07903 919510</p>
 				</div>
 			</div>
-			<div class="d-flex">
+			<div class="d-flex pb-3">
 				<div><small>© {{currentYear}} JMAX MEDIA All rights reserved</small></div>
 				<div class="ml-auto d-block">
 					<small v-for="(l,index) in langNames" class="pointer hover60 text-capitalize" @click="setLang($store, l)">{{l+((index < langNames.length-1)?' | ':'')}}</small>

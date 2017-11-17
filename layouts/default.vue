@@ -78,7 +78,7 @@ h3 {
 	font-weight: bold;
 }
 h4 {
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 }
 @media screen and (max-width: 400px) {
 	h1 {
@@ -175,14 +175,18 @@ button:disabled {
 	opacity: 0.6;
 }
 .transparent-row {
-	height: 500px;
-	background-color: rgba(0, 0, 0, 0.2);
+	height: 600px;
+	/*background-color: rgba(0, 0, 0, 0.2);*/
+	background: linear-gradient(transparent, black 99%); /* Standard syntax */
 }
 .vh-100 {
 	height: 100vh;
 }
 .border {
 	border-color: #000 !important;
+}
+.border-light {
+	border-color: #444444 !important;
 }
 .video-wrapper {
 	position: relative;

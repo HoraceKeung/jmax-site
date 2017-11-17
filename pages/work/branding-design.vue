@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<specific-work :title="$options.workTitle" :text="text" :vid="vid" :img="img" />
+		<specific-work :title="$options.workTitle" :showTitle="false" :text="text" :vid="vid" :img="img" />
 	</section>
 </template>
 
@@ -12,8 +12,8 @@ export default {
 	data () {
 		return {
 			text: [''],
-			vid: ['yBDOuBFPQeE', 'IeAyxWFo6rs', '17l-EhGB6Hs'],
-			img: 0
+			vid: ['17l-EhGB6Hs'],
+			img: 3
 		}
 	}
 }
