@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<specific-work :title="$options.workTitle" :text="text" :vid="vid" :img="img" />
+		<specific-work :title="$options.workTitle" :body="body" :img="img" />
 	</section>
 </template>
 
@@ -11,8 +11,11 @@ export default {
 	workTitle: 'christmas-ad', // workTitle is required for each work
 	data () {
 		return {
-			text: [''],
-			vid: ['yBDOuBFPQeE', 'IeAyxWFo6rs', '17l-EhGB6Hs'],
+			body: [
+				{type: 'vid', value: 'yBDOuBFPQeE'},
+				{type: 'vid', value: 'IeAyxWFo6rs'},
+				{type: 'vid', value: '17l-EhGB6Hs'}
+			],
 			img: 3
 		}
 	}

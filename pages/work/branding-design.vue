@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<specific-work :title="$options.workTitle" :showTitle="false" :text="text" :vid="vid" :img="img" />
+		<specific-work :title="$options.workTitle" :showTitle="false" :showImgGrid="false" :body="body" :img="img" />
 	</section>
 </template>
 
@@ -11,8 +11,11 @@ export default {
 	workTitle: 'branding-design', // workTitle is required for each work
 	data () {
 		return {
-			text: [''],
-			vid: ['17l-EhGB6Hs'],
+			body: [
+				{type: 'img', value: '1'},
+				{type: 'img', value: '2'},
+				{type: 'img', value: '3'}
+			],
 			img: 3
 		}
 	}
