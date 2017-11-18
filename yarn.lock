@@ -5178,6 +5178,10 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
+vue-carousel-3d@^0.1.18:
+  version "0.1.18"
+  resolved "https://registry.yarnpkg.com/vue-carousel-3d/-/vue-carousel-3d-0.1.18.tgz#fb7469182b4a824acfadf4f8f466e1c7e0f06723"
+
 vue-hot-reload-api@^2.2.0:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.2.1.tgz#75f6096abb1df95a1f93b669d89591de15a4df18"

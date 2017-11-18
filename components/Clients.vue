@@ -3,11 +3,21 @@
 		<div class="bg-white py-6">
 			<div class="container text-center">
 				<section-header :header="lang[36]" sub="SEE OUR CLIENTS" cn="合作伙伴" />
-				<div class="row no-gutters">
+				<div class="row no-gutters border border-light border-top-0 border-left-0 border-right-0 mb-5">
 					<div class="col-6 col-md-3 mb-3" v-for="c in clients">
 						<img class="w-100" :src="'/img/client/'+c+'_logo.jpg'" >
 					</div>
 				</div>
+				<carousel-3d border="0" controlsVisible="true">
+					<slide v-for="(t,index) in testimonial" :index="index">
+						<div class="bg-light h-100 border border-light pointer d-flex p-3">
+							<div class="m-auto text-center">
+								<p><i class="fa fa-quote-left" aria-hidden="true"></i> {{t.text}} <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+								<i>{{t.name}}</i>
+							</div>
+						</div>
+					</slide>
+				</carousel-3d>
 			</div>
 		</div>
 		<div id="get-in-touch-div">
@@ -48,6 +58,28 @@ export default {
 				'zige',
 				'art',
 				'maximum'
+			],
+			testimonial: [
+				{
+					name: 'Client A',
+					text: 'I am happy and I like to talk a lot, like really a lot.'
+				},
+				{
+					name: 'Client B',
+					text: 'I am sad.'
+				},
+				{
+					name: 'Client C',
+					text: 'I am angry.'
+				},
+				{
+					name: 'Client D',
+					text: 'I am bored.'
+				},
+				{
+					name: 'Client E',
+					text: 'I am hungry.'
+				}
 			]
 		}
 	}
