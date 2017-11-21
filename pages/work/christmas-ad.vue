@@ -11,7 +11,7 @@ export default {
 	workTitle: 'christmas-ad', // workTitle is required for each work
 	data () {
 		return {
-			text: [''],
+			text: ['JMAX MEDIA produced a range of short viral adverts for fictional shoe company Staplers, to advertise discounts in the build-up to Christmas. The adverts used a range of animation styles and festive characters to appeal to different audiences.'],
 			vid: ['yBDOuBFPQeE', 'IeAyxWFo6rs', '17l-EhGB6Hs'],
 			img: 3
 		}

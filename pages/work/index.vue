@@ -16,6 +16,7 @@
 					<div class="overlay text-center pointer" @click="$router.push('/work/'+w)">
 						<div class="px-3">
 							<h3 class="text-uppercase">{{w.split('-').join(' ')}}</h3>
+							<button class="btn btn-jmax font-weight-bold m-auto d-block text-uppercase" type="button">{{lang[45]}}</button>
 						</div>
 					</div>
 				</div>

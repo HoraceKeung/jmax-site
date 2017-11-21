@@ -47,7 +47,9 @@ export default {
 				'lse',
 				'zige',
 				'art',
-				'maximum'
+				'maximum',
+				'',
+				'lout'
 			]
 		}
 	}
