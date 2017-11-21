@@ -50,6 +50,9 @@ export default {
 				'maximum',
 				'',
 				'lout'
+			],
+			testimonial: [
+				{name: 'Client A', text: 'I am happy'}
 			]
 		}
 	}
