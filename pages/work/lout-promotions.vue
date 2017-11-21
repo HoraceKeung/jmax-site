@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<specific-work :title="$options.workTitle" :showTitle="false" :text="text" :vid="vid" :img="img" />
+		<specific-work :title="$options.workTitle" :showTitle="false"  :body="body" :img="img" />
 	</section>
 </template>
 
@@ -11,9 +11,12 @@ export default {
 	workTitle: 'lout-promotions', // workTitle is required for each work
 	data () {
 		return {
-			text: ['Lout Promotions are a Brighton based concert promoter and event producer. They promote hundreds of Gigs in Brighton every year with artists from all over the world as well as produce The Great Escape Festival every May, which is Europes leading new music festival. JMAX MEDIA provides promotional artwork for some of these gigs, for both print and web.'],
-			vid: [''],
-			img: 6
+			body: [
+				{type: 'text', value: 'Lout Promotions are a Brighton based concert promoter and event producer. They promote hundreds of Gigs in Brighton every year with artists from all over the world as well as produce The Great Escape Festival every May, which is Europes leading new music festival. JMAX MEDIA provides promotional artwork for some of these gigs, for both print and web.'},
+				{type: 'img', value: '1'},
+				{type: 'img', value: '2'}
+			],
+			img: 0
 		}
 	}
 }
