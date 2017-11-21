@@ -9,7 +9,7 @@
 					</div>
 				</div>
 				<!-- START Testimonial -->
-				<carousel-3d border="0" :controlsVisible="true">
+				<carousel-3d border="1" width="550" autoplay="true" autoplayTimeout="5000" animationSpeed="2000" :controlsVisible="true">
 					<slide v-for="(t,index) in testimonial" :index="index" :key="index">
 						<div class="bg-light h-100 border border-light pointer d-flex p-3">
 							<div class="m-auto text-center">
@@ -52,7 +52,9 @@ export default {
 				'lout'
 			],
 			testimonial: [
-				{name: 'Client A', text: 'I am happy'}
+				{name: '- Zige', text: 'Excellent work as always. very creative and effective.'},
+				{name: '- Maximum', text: 'JMAX is absolutely one of the best produciton company I know. Without a doubt. They are not only creative, they does research, spends time in understanding and editing where needed.. Just hire them and you’ll agree!'},
+				{name: '- Hyacinth Capital', text: 'Thanks James! Perfect logo, very cooperative and good expertise on the subject in a nice design. Next job is already on its way!'}
 			]
 		}
 	}
@@ -60,4 +62,5 @@ export default {
 </script>
 
 <style scoped>
+
 </style>

@@ -12,10 +12,11 @@ export default {
 	data () {
 		return {
 			body: [
-				{type: 'vid', value: '2UR-cXaQv4Y'},
-				{type: 'text', value: 'JMAX MEDIA produced, shot and edited a 30-second advert for Staples - a fictional online marketplace for second-hand shoes - to showcase the video advertising services available. The advert was designed with a fun, cute and charming aesthetic to appeal to the target market and wider audience alike.'}
+				{type: 'img', value: '1'},
+				{type: 'text', value: 'JMAX MEDIA produced, shot and edited a 30-second advert for Staples - a fictional online marketplace for second-hand shoes - to showcase the video advertising services available. The advert was designed with a fun, cute and charming aesthetic to appeal to the target market and wider audience alike.'},
+				{type: 'img', value: '2'}
 			],
-			img: 1
+			img: 0
 		}
 	}
 }

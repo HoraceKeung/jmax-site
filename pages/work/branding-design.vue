@@ -12,7 +12,7 @@ export default {
 	data () {
 		return {
 			body: [
-				{type: 'vid', value: '17l-EhGB6Hs'},
+				{type: 'vid', value: 'TFxQg6ydQcw'},
 				{type: 'text', value: 'Hyacinth Capital commissioned company-wide branding for their new capital investments business. They requested a colourful, corporate and professional feel, answered with a sharp logo, custom typography and a colour scheme of varying shades of royal purple and contrasting green. The project extended to a full set of branded stationery, such as business cards, complement slips and letterheads.'},
 				{type: 'img', value: '2'},
 				{type: 'img', value: '3'},
