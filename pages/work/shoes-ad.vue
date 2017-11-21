@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<specific-work :title="$options.workTitle" :showTitle="false" :text="text" :vid="vid" :img="img" />
+		<specific-work :title="$options.workTitle" :showTitle="false" :body="body" :img="img" />
 	</section>
 </template>
 
@@ -11,8 +11,11 @@ export default {
 	workTitle: 'shoes-ad', // workTitle is required for each work
 	data () {
 		return {
-			text: ['JMAX MEDIA produced, shot and edited a 30-second advert for Staples - a fictional online marketplace for second-hand shoes - to showcase the video advertising services available. The advert was designed with a fun, cute and charming aesthetic to appeal to the target market and wider audience alike.'],
-			vid: ['2UR-cXaQv4Y', 'ou-iC5tYKos'],
+			body: [
+				{type: 'vid', value: '2UR-cXaQv4Y'},
+				{type: 'vid', value: 'ou-iC5tYKos'},
+				{type: 'text', value: 'JMAX MEDIA produced, shot and edited a 30-second advert for Staples - a fictional online marketplace for second-hand shoes - to showcase the video advertising services available. The advert was designed with a fun, cute and charming aesthetic to appeal to the target market and wider audience alike.'}
+			],
 			img: 3
 		}
 	}

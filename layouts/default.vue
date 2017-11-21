@@ -174,11 +174,6 @@ button:disabled {
 .hover60:hover {
 	opacity: 0.6;
 }
-.transparent-row {
-	height: 600px;
-	/*background-color: rgba(0, 0, 0, 0.2);*/
-	background: linear-gradient(transparent, black 99%); /* Standard syntax */
-}
 .vh-100 {
 	height: 100vh;
 }

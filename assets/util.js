@@ -18,14 +18,6 @@ const util = {
 			scroll()
 		}
 	},
-	animateIsShow (id, store, offset = 150) {
-		if (typeof document === 'undefined') {
-			return false
-		} else if (store.state.scrollTop > 0) {
-			var rect = document.getElementById(id).getBoundingClientRect()
-			return rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + offset
-		}
-	},
 	setLang (store, l) {
 		const arr = require('../static/languages/' + l + '.json')
 		store.commit('SET_LANG', arr)

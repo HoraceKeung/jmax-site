@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<specific-work :title="$options.workTitle" :text="text" :vid="vid" :img="img" />
+		<specific-work :title="$options.workTitle" :body="body" :img="img" />
 	</section>
 </template>
 
@@ -11,8 +11,16 @@ export default {
 	workTitle: 'christmas-ad', // workTitle is required for each work
 	data () {
 		return {
+<<<<<<< HEAD
 			text: ['JMAX MEDIA produced a range of short viral adverts for fictional shoe company Staplers, to advertise discounts in the build-up to Christmas. The adverts used a range of animation styles and festive characters to appeal to different audiences.'],
 			vid: ['yBDOuBFPQeE', 'IeAyxWFo6rs', '17l-EhGB6Hs'],
+=======
+			body: [
+				{type: 'vid', value: 'yBDOuBFPQeE'},
+				{type: 'vid', value: 'IeAyxWFo6rs'},
+				{type: 'vid', value: '17l-EhGB6Hs'}
+			],
+>>>>>>> c97534294c9971037e8c5e674c9ed2e744929023
 			img: 3
 		}
 	}
