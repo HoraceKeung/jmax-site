@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<specific-work :title="$options.workTitle" :showTitle="false"  :body="body" :img="img" />
+		<specific-work :title="$options.workTitle" :showTitle="false" :showImgGrid="false" :body="body" :img="img" />
 	</section>
 </template>
 
@@ -17,7 +17,7 @@ export default {
 				{type: 'img', value: '1'},
 				{type: 'img', value: '2'}
 			],
-			img: 0
+			img: 3
 		}
 	}
 }
