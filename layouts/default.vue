@@ -80,6 +80,9 @@ h3 {
 h4 {
 	font-size: 1.2rem;
 }
+h5 {
+	font-size: 1.05rem;
+}
 @media screen and (max-width: 400px) {
 	h1 {
 		font-size: 2.25rem;
@@ -119,9 +122,8 @@ button:disabled {
 	border-radius: 0px;
 }
 .btn-jmax:hover {
-	background-color: #fff;
-	border-color: #000;
-	color: #000;
+	background-color:#283b5b;
+
 }
 .btn-jmax-solid {
 	background-color: #000;
@@ -130,8 +132,7 @@ button:disabled {
 	border-radius: 0px;
 }
 .btn-jmax-solid:hover {
-	background-color: #fff;
-	color: #000;
+	background-color:#283b5b;
 }
 .section-header {
 	padding: 0.75rem;

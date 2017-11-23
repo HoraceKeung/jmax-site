@@ -9,7 +9,7 @@
 			<!-- START Services breakdown -->
 			<div v-for="(s,index) in services" :id="s.id">
 				<div class="container">
-					<div :class="'row py-6'+(index!==0?' border border-light border-right-0 border-bottom-0 border-left-0':'')">
+					<div :class="'row py-5'+(index!==0?' border border-light border-right-0 border-bottom-0 border-left-0':'')">
 						<div :class="'col-lg-5 my-auto d-none'+(index%2!==0?' d-lg-block':'')">
 							<transition enter-active-class="animated fadeInUp">
 								<img v-if="s.inView" class='w-100 animated-img' :src="s.img">
@@ -19,8 +19,8 @@
 							<div class="mr-2"><img width="40" :src="s.icon"></div>
 							<div>
 								<h3 class="text-uppercase">{{lang[s.header]}}</h3>
-								<div class="mb-3"><h4 v-for="t in s.text" class="mb-0 normalLH">{{lang[t]}}</h4></div>
-								<h4 class="normalLH mb-0" v-for="k in s.keywords">- {{lang[k]}}</h4>
+								<div class="mb-3"><h5 v-for="t in s.text" class="mb-0 normalLH">{{lang[t]}}</h5></div>
+								<h5 class="normalLH mb-0" v-for="k in s.keywords">- {{lang[k]}}</h5>
 							</div>
 						</div>
 						<div :class="'col-lg-5 my-auto'+(index%2!==0?' d-lg-none':'')">

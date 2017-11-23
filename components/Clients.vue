@@ -3,13 +3,17 @@
 		<div class="bg-white py-6">
 			<div class="container text-center">
 				<section-header :header="lang[36]" sub="SEE OUR CLIENTS" cn="合作伙伴" />
-				<div class="row no-gutters border border-light border-top-0 border-left-0 border-right-0 mb-5">
+				<div class="row no-gutters border-light border-top-0 border-left-0 border-right-0 mb-5">
 					<div class="col-6 col-md-3 mb-3" v-for="c in clients">
 						<img class="w-100" :src="'/img/client/'+c+'.jpg'" >
 					</div>
 				</div>
+			</div>
+
+			<img class="w-100" src="~/assets/img/line.jpg" >
+
 				<!-- START Testimonial -->
-				<carousel-3d border="1" width="550" :autoplay="true" :autoplayTimeout="5000" :animationSpeed="2000" :controlsVisible="true">
+				<carousel-3d border="1" width="620" :autoplay="true" :autoplayTimeout="5000" :animationSpeed="2000">
 					<slide v-for="(t,index) in testimonial" :index="index" :key="index">
 						<div class="bg-light h-100 border border-light pointer d-flex p-3">
 							<div class="m-auto text-center">
@@ -20,8 +24,10 @@
 					</slide>
 				</carousel-3d>
 				<!-- END Testimonial -->
-			</div>
-		</div>
+</div>
+
+
+
 		<parallax-window id="client-parallax">
 			<h2>{{lang[44]}}</h2>
 			<button @click="$router.push('/contact')" class="btn btn-jmax font-weight-bold m-auto d-block text-uppercase" type="button">{{lang[37]}}</button>

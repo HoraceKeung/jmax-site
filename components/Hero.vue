@@ -6,7 +6,7 @@
 					<img class="img-fluid d-block d-md-none" src="~/assets/img/newlogo-mobile.png" alt="JMaxMedia">
 					<img class="img-fluid d-none d-md-block" src="~/assets/img/newlogo.png" alt="JMaxMedia">
 					<h4 class="normalLH text-white hero-text mx-2">{{lang[0]}}</h4>
-					<button @click="$router.push('/work')" class="btn btn-jmax font-weight-bold mx-md-2 d-block mx-auto text-uppercase" type="button">{{lang[22]}}</button>
+					<button @click="$router.push('/work')" class="btn btn-jmax font-weight-bold mx-md-2 d-block mx-auto text-uppercase mb-5" type="button">{{lang[22]}}</button>
 				</div>
 			</div>
 		</div>

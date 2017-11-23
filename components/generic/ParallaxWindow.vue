@@ -35,6 +35,6 @@ export default {
 <style scoped>
 .transparent-row {
 	height: 600px;
-	background: linear-gradient(transparent, black 99%); /* Standard syntax */
+	background: linear-gradient(transparent, #0d0d0d 99%); /* Standard syntax */
 }
 </style>
