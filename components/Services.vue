@@ -9,7 +9,7 @@
 			<!-- START Services breakdown -->
 			<div v-for="(s,index) in services" :id="s.id">
 				<div class="container">
-					<div :class="'row py-5'+(index!==0?' border border-light border-right-0 border-bottom-0 border-left-0':'')">
+					<div :class="'row py-6'+(index!==0?' border border-light border-right-0 border-bottom-0 border-left-0':'')">
 						<div :class="'col-lg-5 my-auto d-none'+(index%2!==0?' d-lg-block':'')">
 							<transition enter-active-class="animated fadeInUp">
 								<img v-if="s.inView" class='w-100 animated-img' :src="s.img">

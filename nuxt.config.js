@@ -4,11 +4,11 @@ module.exports = {
     ** Headers of the page
     */
     head: {
-        title: 'JMaxMedia',
+        title: 'JMAX MEDIA',
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: 'JMax Media' }
+            { hid: 'description', name: 'description', content: 'JMAX MEDIA is a full service video production and graphic design company based in the UK and China. We specialise in creating original branding solutions that resonate and engage with an international audience.' }
         ],
         script: [
             { src: 'https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity: 'sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin: 'anonymous' },
