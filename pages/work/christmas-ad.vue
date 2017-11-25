@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<specific-work :title="$options.workTitle" :body="body" :img="img" />
+		<specific-work :title="$options.workTitle" :body="body" />
 	</section>
 </template>
 
@@ -16,8 +16,7 @@ export default {
 				{type: 'text', value: 'JMAX MEDIA produced a range of short viral adverts for fictional shoe company Staplers, to advertise discounts in the build-up to Christmas. The adverts used a range of animation styles and festive characters to appeal to different audiences.'},
 				{type: 'vid', value: 'IeAyxWFo6rs'},
 				{type: 'vid', value: '17l-EhGB6Hs'}
-			],
-			img: 3
+			]
 		}
 	}
 }

@@ -14,8 +14,8 @@
 						<div v-else-if="b.type==='text'">
 							<p class="text-justify mb-0">{{b.value}}</p>
 						</div>
-						<div v-else-if="b.type==='img'" @click="viewingImg=b.value" class="pointer hover60">
-							<img class="w-100" :src="'/img/work/'+title+'/'+b.value+'.jpg'">
+						<div v-else-if="b.type==='img'" class="pointer hover60">
+							<img v-img:workImg class="w-100" :src="'/img/work/'+title+'/'+b.value+'.jpg'">
 						</div>
 					</div>
 				</div>
@@ -24,20 +24,12 @@
 		<!-- START Img grid -->
 		<div class="container-fluid px-0" v-if="showImgGrid">
 			<div class="row no-gutters">
-				<div v-for="i in img" @click="viewingImg=i" class="col-md-4 pointer hover60">
-					<img class="w-100" :src="'/img/work/'+title+'/'+i+'.jpg'">
+				<div v-for="i in imgs" class="col-md-4 pointer hover60">
+					<img v-img:workImg class="w-100" :src="'/img/work/'+title+'/'+i+'.jpg'" onerror="this.parentNode.parentNode.removeChild(this.parentNode)">
 				</div>
 			</div>
 		</div>
 		<!-- END Img grid -->
-		<div class="img-viewer" v-if="viewingImg">
-			<div class="d-flex fixed-top h-100">
-				<i v-if="viewingImg>1" @click="viewingImg--" class="fa fa-3x fa-chevron-left text-white pointer hover60 my-auto ml-3" aria-hidden="true"></i>
-				<i v-if="viewingImg<img" @click="viewingImg++" class="fa fa-3x fa-chevron-right text-white pointer hover60 my-auto ml-auto mr-3" aria-hidden="true"></i>
-			</div>
-			<i class="fa fa-3x fa-times text-white m-3 pointer hover60 fixed-top text-right" aria-hidden="true" @click="viewingImg=null"></i>
-			<img class="w-100 m-auto d-block" :src="'/img/work/'+title+'/'+viewingImg+'.jpg'">
-		</div>
 	</div>
 </template>
 
@@ -47,12 +39,20 @@ export default {
 		title: String,
 		showTitle: {type: Boolean, default: true},
 		body: Array, // Array of object, each object has type of vid/text/img and value
-		img: Number,
+		specificImgs: Array,
 		showImgGrid: {type: Boolean, default: true}
 	},
-	data () {
-		return {
-			viewingImg: null
+	computed: {
+		imgs () {
+			if (typeof this.specificImgs === 'undefined') {
+				const context = require.context('~/static/img/work', true, /\.jpg$/)
+				return parseInt(context.keys().map(k => context(k)).reduce((arr, comp) => {
+					arr.push(comp.split('/').slice(-1)[0].split('.')[0])
+					return arr
+				}, []).filter(x => x !== 't').sort().slice(-1)[0])
+			} else {
+				return this.specificImgs
+			}
 		}
 	}
 }
@@ -63,14 +63,5 @@ export default {
 	height: 25rem;
 	background-size: cover;
 	background-position: center;
-}
-.img-viewer {
-	background-color: rgba(0, 0, 0, 0.8);
-	height: 100vh;
-	width: 100%;
-	position: fixed;
-	top: 0px;
-	z-index: 1031;
-	display: flex;
 }
 </style>

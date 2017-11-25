@@ -1,5 +1,5 @@
 <template>
-	<footer class="footer" id="footer">
+	<footer class="bg-black-alt text-white" id="footer">
 		<div class="container pt-6 pb-3">
 			<div class="row mb-5 ">
 				<div class="col-md-3 mb-3 mb-md-0">
@@ -74,8 +74,4 @@ export default {
 </script>
 
 <style scoped>
-.footer {
-	background-color: #0d0d0d;
-	color: #fff;
-}
 </style>

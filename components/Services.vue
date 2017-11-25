@@ -7,9 +7,9 @@
 			<img class="w-100 d-none d-lg-block" src="~/assets/img/intro.gif">
 			<img class="w-100 d-lg-none" src="~/assets/img/intro-mobile.gif">
 			<!-- START Services breakdown -->
-			<div v-for="(s,index) in services" :id="s.id">
+			<div v-for="(s,index) in services" :id="s.id" :class="index%2!==0?'bg-even-service':''">
 				<div class="container">
-					<div :class="'row py-6'+(index!==0?' border border-light border-right-0 border-bottom-0 border-left-0':'')">
+					<div class="row py-6">
 						<div :class="'col-lg-5 my-auto d-none'+(index%2!==0?' d-lg-block':'')">
 							<transition enter-active-class="animated fadeInUp">
 								<img v-if="s.inView" class='w-100 animated-img' :src="s.img">
@@ -98,5 +98,8 @@ export default {
 	-webkit-animation-duration: 1.75s;
 	-moz-animation-duration: 1.75s;
 	-ms-transition-animation-duration: 1.75s;
+}
+.bg-even-service {
+	background-color: #f8f9fa;
 }
 </style>
