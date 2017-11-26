@@ -6,6 +6,14 @@
 			</div>
 			<img class="w-100 d-none d-lg-block" src="~/assets/img/intro.gif">
 			<img class="w-100 d-lg-none" src="~/assets/img/intro-mobile.gif">
+
+					<div class="bg-dark py-6">
+						<div class="container text-center text-white">
+							<h3 class="text-uppercase">{{lang[50]}}</h3>
+							<p class="mb-0">{{lang[51]}}</p>
+						</div>
+					</div>
+
 			<!-- START Services breakdown -->
 			<div v-for="(s,index) in services" :id="s.id" :class="index%2!==0?'bg-even-service':''">
 				<div class="container">
@@ -35,7 +43,7 @@
 		</div>
 		<parallax-window id="service-parallax">
 			<h2>{{lang[43]}}</h2>
-			<button @click="$router.push('/team')" class="btn btn-jmax font-weight-bold m-auto d-block text-uppercase" type="button">{{lang[29]}}</button>
+			<button @click="$router.push('/team')" class="btn btn-jmax font-weight-bold m-auto d-block text-uppercase pl-3 pr-3" type="button">{{lang[29]}}</button>
 		</parallax-window>
 	</div>
 </template>
@@ -75,7 +83,7 @@ export default {
 					icon: '/img/service/chinese-market-small.png',
 					header: 10,
 					text: [11],
-					keywords: [12, 13, 14],
+					keywords: [12, 13, 14, 48, 49],
 					inView: false
 				},
 				{
@@ -100,6 +108,6 @@ export default {
 	-ms-transition-animation-duration: 1.75s;
 }
 .bg-even-service {
-	background-color: #f8f9fa;
+	background-color: #fcfcfc;
 }
 </style>

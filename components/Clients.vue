@@ -10,7 +10,7 @@
 				</div>
 			</div>
 			<div class="bg-dark py-6">
-				<div class="container text-white">
+				<div class="container text-center text-white">
 					<h3 class="text-uppercase">{{lang[46]}}</h3>
 					<p class="mb-0">{{lang[47]}}</p>
 				</div>
@@ -32,7 +32,7 @@
 		</div>
 		<parallax-window id="client-parallax">
 			<h2>{{lang[44]}}</h2>
-			<button @click="$router.push('/contact')" class="btn btn-jmax font-weight-bold m-auto d-block text-uppercase" type="button">{{lang[37]}}</button>
+			<button @click="$router.push('/contact')" class="btn btn-jmax font-weight-bold m-auto d-block text-uppercase pt-2 pb-2 pl-3 pr-3" type="button">{{lang[37]}}</button>
 		</parallax-window>
 	</div>
 </template>
