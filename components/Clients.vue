@@ -43,7 +43,6 @@ import ParallaxWindow from './generic/ParallaxWindow'
 export default {
 	components: {SectionHeader, ParallaxWindow},
 	computed: {
-		lang () { return this.$store.state.lang },
 		clients () {
 			const context = require.context('~/static/img/client', false, /\.jpg$/)
 			return context.keys().map(k => context(k)).reduce((arr, comp) => {

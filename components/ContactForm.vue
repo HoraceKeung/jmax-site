@@ -34,17 +34,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="bg-dark py-6">
-			<div class="container text-center text-white">
-				<h3 class="text-uppercase">{{lang[52]}}</h3>
-				<h5 class="mb-0">{{lang[53]}}</h5>
-				<h4 class="mt-4 text-left">{{lang[54]}}</h4>
-				<p class="col-lg-5 text-left">{{lang[55]}}</p>
-				<h3 class="mb-0 mt-5">{{lang[56]}}</h3>
-			</div>
-		</div>
 	</div>
-
 </template>
 
 <script>
@@ -68,8 +58,7 @@ export default {
 	computed: {
 		canSend () {
 			return this.nameErr === '' && this.emailErr === '' && this.commentErr === ''
-		},
-		lang () { return this.$store.state.lang }
+		}
 	},
 	methods: {
 		input (key, value) {

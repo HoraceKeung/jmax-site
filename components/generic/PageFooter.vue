@@ -40,8 +40,7 @@ export default {
 		},
 		address () { return this.$store.state.address },
 		links () { return this.$store.state.links },
-		langNames () { return this.$store.state.langNames },
-		lang () { return this.$store.state.lang }
+		langNames () { return this.$store.state.langNames }
 	},
 	data () {
 		return {

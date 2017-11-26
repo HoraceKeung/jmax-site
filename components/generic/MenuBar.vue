@@ -27,8 +27,7 @@ export default {
 	computed: {
 		links () { return this.$store.state.links },
 		isShowLogo () { return this.$store.state.scrollTop > 0 },
-		currentLangName () { return this.$store.state.currentLangName },
-		lang () { return this.$store.state.lang }
+		currentLangName () { return this.$store.state.currentLangName }
 	},
 	methods: {...util}
 }

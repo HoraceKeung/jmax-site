@@ -25,9 +25,6 @@
 import SectionHeader from '~/components/generic/SectionHeader'
 export default {
 	components: {SectionHeader},
-	computed: {
-		lang () { return this.$store.state.lang }
-	},
 	data () {
 		return {
 			currentHover: null,

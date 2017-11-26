@@ -38,8 +38,7 @@ export default {
 				}
 				return arr
 			}, [])
-		},
-		lang () { return this.$store.state.lang }
+		}
 	},
 	data () {
 		return {

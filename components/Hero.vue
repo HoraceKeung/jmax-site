@@ -21,8 +21,7 @@ import util from '~/assets/util'
 import BackTube from 'back-tube'
 export default {
 	computed: {
-		isShowShadow () { return this.$store.state.scrollTop === 0 },
-		lang () { return this.$store.state.lang }
+		isShowShadow () { return this.$store.state.scrollTop === 0 }
 	},
 	methods: {...util},
 	data () {
