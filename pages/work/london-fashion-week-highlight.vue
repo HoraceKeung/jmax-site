@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<specific-work :title="$options.workTitle" :body="body" />
+		<specific-work :title="$options.workTitle" :showImgGrid="false" :body="body" />
 	</section>
 </template>
 
@@ -12,9 +12,9 @@ export default {
 	data () {
 		return {
 			body: [
-				{type: 'img', value: '1'},
+				{type: 'img', value: '2'},
 				{type: 'text', value: 'JMAX MEDIA produced, shot and edited a 30-second advert for Staples - a fictional online marketplace for second-hand shoes - to showcase the video advertising services available. The advert was designed with a fun, cute and charming aesthetic to appeal to the target market and wider audience alike.'},
-				{type: 'img', value: '2'}
+				{type: 'img', value: '3'}
 			]
 		}
 	}

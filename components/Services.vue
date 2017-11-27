@@ -17,6 +17,7 @@
 			<!-- START Services breakdown -->
 			<div v-for="(s,index) in services" :id="s.id" :class="index%2!==0?'bg-even-service':''">
 				<div class="container">
+					<div class="py-3">	</div>
 					<div class="row py-6">
 						<div :class="'col-lg-5 my-auto d-none'+(index%2!==0?' d-lg-block':'')">
 							<transition enter-active-class="animated fadeInUp">
@@ -39,10 +40,11 @@
 					</div>
 				</div>
 			</div>
+
 			<!-- END Services breakdown -->
 		</div>
 		<parallax-window id="service-parallax">
-			<h2>{{lang[43]}}</h2>
+						<h2>{{lang[43]}}</h2>
 			<button @click="$router.push('/team')" class="btn btn-jmax font-weight-bold m-auto d-block text-uppercase pl-3 pr-3" type="button">{{lang[29]}}</button>
 		</parallax-window>
 	</div>
@@ -105,6 +107,6 @@ export default {
 	-ms-transition-animation-duration: 1.75s;
 }
 .bg-even-service {
-	background-color: #fcfcfc;
+	background-color: #f7f7f7;
 }
 </style>

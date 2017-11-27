@@ -16,7 +16,7 @@
 				</div>
 			</div>
 			<!-- START Testimonial -->
-			<div class="bg-black-alt py-5">
+			<div class="bg-black-alt py-6">
 				<carousel-3d border="1" width="620" :autoplay="true" :autoplayTimeout="5000" :animationSpeed="2000">
 					<slide v-for="(t,index) in testimonial" :index="index" :key="index">
 						<div class="bg-white h-100 border border-light pointer d-flex p-3">
