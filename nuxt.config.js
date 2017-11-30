@@ -6,7 +6,7 @@ module.exports = {
     ** Headers of the page
     */
     head: {
-        title: 'JMAX MEDIA',
+        title: 'JMAX MEDIA：CHINA-UK Media Company|Video Production, Branding, Chinese Market Entry Strategy ',
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },

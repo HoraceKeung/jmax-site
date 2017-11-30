@@ -13,7 +13,7 @@
 					<img v-show="currentHover!==index" class="w-100 mb-3" @mouseover="currentHover=index" :src="m.img" :alt="m.name">
 					<img v-show="currentHover===index" class="w-100 mb-3" @mouseleave="currentHover=null" :src="m.imgHover" :alt="m.name">
 					<h4 class="font-weight-bold">{{m.name}}</h4>
-					<!-- <p class="mb-0" v-for="r in m.role">{{r}}</p> -->
+					<h5 class="mb-0" v-for="r in m.role">{{r}}</h5>
 					<p class="my-2">{{m.desc}}</p>
 				</div>
 			</div>
@@ -32,28 +32,28 @@ export default {
 			teamMember: [
 				{
 					name: 'MIKE CHEN',
-					role: ['UNKNOWN ROLE'],
+					role: ['Director of the Production Team'],
 					img: '/img/team/Mike.jpg',
 					imgHover: '/img/team/mike.gif',
 					desc: 'Have a dry sense of humor. Quote: Dream big, shine bright.'
 				},
 				{
 					name: 'MICHELLE YANG',
-					role: ['UNKNOWN ROLE'],
+					role: ['Director of the Marketing Team'],
 					img: '/img/team/Michelle.jpg',
 					imgHover: '/img/team/michelle.gif',
 					desc: 'The one and only “Internet celebrity” in our company, always dress well.'
 				},
 				{
 					name: 'JAMES BLAY',
-					role: ['UNKNOWN ROLE'],
+					role: ['Director of the Graphic Team'],
 					img: '/img/team/James.jpg',
 					imgHover: '/img/team/james.gif',
 					desc: 'Like a stick of rock, bite one down and you’ll still read Brighton.'
 				},
 				{
 					name: 'HAOHAN TANG',
-					role: ['UNKNOWN ROLE'],
+					role: ['Director of the HR Team'],
 					img: '/img/team/Tang.jpg',
 					imgHover: '/img/team/tang.gif',
 					desc: 'Stay young, stay positive.'

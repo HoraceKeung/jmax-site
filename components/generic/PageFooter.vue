@@ -17,7 +17,7 @@
 				<div class="col-md-3">
 					<h4 class="font-weight-bold text-uppercase">{{lang[40]}}</h4>
 					<p class="mb-1"><strong class="text-capitalize">{{lang[41]}}: </strong><a href="mailto:jmaxmedia@jmaxmedia.co.uk">jmaxmedia@jmaxmedia.co.uk</a></p>
-					<p class="mb-1"><strong class="text-capitalize">{{lang[42]}}: </strong>07903 919510</p>
+					<p class="mb-1"><strong class="text-capitalize">{{lang[42]}}: </strong>01903 919514</p>
 				</div>
 			</div>
 			<div class="d-flex pb-3">
