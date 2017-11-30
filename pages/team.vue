@@ -60,6 +60,14 @@ export default {
 				}
 			]
 		}
+	},
+	head () {
+		return {
+			title: 'Our Team',
+			meta: [
+				{ hid: 'description', name: 'description', content: 'Meet the team who built the dream' }
+			]
+		}
 	}
 }
 </script>
