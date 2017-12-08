@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<div class="container text-center pt-5">
-			<section-header :header="lang[29]" sub="MEET THE TEAM WHO BUILT THE DREAM" cn="关于我们" />
+			<section-header :header="lang[65]" sub="MEET THE TEAM WHO BUILT THE DREAM" cn="关于我们" />
 			<div class="row mb-5">
 				<div class="col-lg-2"></div>
 				<div class="col-lg-8">

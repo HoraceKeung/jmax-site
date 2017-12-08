@@ -13,11 +13,12 @@
 				<div class="container text-center text-white">
 					<h3 class="text-uppercase">{{lang[46]}}</h3>
 					<p class="mb-0">{{lang[47]}}</p>
+					<h2 class="text-uppercase">—</h2>
 				</div>
 			</div>
 			<!-- START Testimonial -->
 			<div class="bg-black-alt py-6">
-				<carousel-3d border="1" width="620" :autoplay="true" :autoplayTimeout="5000" :animationSpeed="2000">
+				<carousel-3d border="1" width="500" height="300" :autoplay="true" :autoplayTimeout="5000" :animationSpeed="2000">
 					<slide v-for="(t,index) in testimonial" :index="index" :key="index">
 						<div class="bg-white h-100 border border-light pointer d-flex p-3">
 							<div class="m-auto text-center">
@@ -29,6 +30,8 @@
 				</carousel-3d>
 			</div>
 			<!-- END Testimonial -->
+
+
 		</div>
 		<parallax-window id="client-parallax">
 			<h2>{{lang[44]}}</h2>
@@ -55,6 +58,8 @@ export default {
 		return {
 			testimonial: [
 				{name: 'Zige', text: 'Excellent work as always. very creative and effective.'},
+				{name: 'Hyacinth Capital', text: 'Hard to choose the logo they designed for us. They are all good logo (ᵔᴥᵔ)'},
+				{name: 'Ringmer Garden', text: 'It is my first time working with Jmax Media. They provided a very good service. High efficiency and beautiful results'},
 				{name: 'Maximum', text: 'JMAX is absolutely one of the best produciton company I know. Without a doubt. They are not only creative, they does research, spends time in understanding and editing where needed.. Just hire them and you’ll agree!'},
 				{name: 'Hyacinth Capital', text: 'Thanks James! Perfect logo, very cooperative and good expertise on the subject in a nice design. Next job is already on its way!'}
 			]

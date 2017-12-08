@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<div class="container text-center py-5">
-			<section-header :header="lang[22]" sub="WHAT WE DID" cn="作品" />
+			<section-header :header="lang[64]" sub="WHAT WE DID" cn="作品" />
 			<div class="row">
 				<div class="col-lg-2"></div>
 				<div class="col-lg-8">

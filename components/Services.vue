@@ -11,6 +11,7 @@
 						<div class="container text-center text-white">
 							<h3 class="text-uppercase">{{lang[50]}}</h3>
 							<p class="mb-0">{{lang[51]}}</p>
+							<h2 class="text-uppercase">—</h2>
 						</div>
 					</div>
 
@@ -25,11 +26,12 @@
 							</transition>
 						</div>
 						<div class="col-lg-7 d-flex mb-5 mb-lg-0">
-							<div class="mr-2"><img width="40" :src="s.icon"></div>
+							<div class="mr-2 pt-3"><img width="40" :src="s.icon"></div>
 							<div>
-								<h3 class="text-uppercase">{{lang[s.header]}}</h3>
+								<h3 class="text-uppercase pt-3">{{lang[s.header]}}</h3>
+								<h3 class="text-uppercase">—-</h3>
 								<div class="mb-3"><h5 v-for="t in s.text" class="mb-0 normalLH">{{lang[t]}}</h5></div>
-								<h5 class="normalLH mb-0" v-for="k in s.keywords">- {{lang[k]}}</h5>
+								<h5 class="normalLH mb-0 pb-1" v-for="k in s.keywords">- {{lang[k]}}</h5>
 							</div>
 						</div>
 						<div :class="'col-lg-5 my-auto'+(index%2!==0?' d-lg-none':'')">
@@ -45,7 +47,7 @@
 		</div>
 		<parallax-window id="service-parallax">
 						<h2>{{lang[43]}}</h2>
-			<button @click="$router.push('/team')" class="btn btn-jmax font-weight-bold m-auto d-block text-uppercase pl-3 pr-3" type="button">{{lang[29]}}</button>
+			<button @click="$router.push('/team')" class="btn btn-jmax font-weight-bold m-auto d-block text-uppercase px-3" type="button">{{lang[29]}}</button>
 		</parallax-window>
 	</div>
 </template>
@@ -92,6 +94,15 @@ export default {
 					header: 15,
 					text: [16],
 					keywords: [17, 18, 19, 20, 21],
+					inView: false
+				},
+				{
+					id: 's-pr',
+					img: '/img/service/pr.png',
+					icon: '/img/service/pr-small.png',
+					header: 59,
+					text: [60],
+					keywords: [61, 62, 63],
 					inView: false
 				}
 			]

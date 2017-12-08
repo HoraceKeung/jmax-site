@@ -34,7 +34,7 @@ export default {
 			const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
 			if (width > 767) {
 				this.bt = new BackTube(document.querySelector('#hero'), {
-					videoId: 'O2PuVEA2Ta8'
+					videoId: 'Jv6z--8yjXw'
 				})
 			}
 		})

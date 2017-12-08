@@ -1,7 +1,7 @@
 <template>
 	<div class="py-5">
 		<div class="container text-center">
-			<section-header :header="lang[34]" sub="FEEL FREE TO GET IN TOUCH" cn="联系我们" />
+			<section-header :header="lang[66]" sub="FEEL FREE TO GET IN TOUCH" cn="联系我们" />
 			<div class="row my-4">
 				<div class="col-md-2 col-lg-3"></div>
 				<div class="col-md-8 col-lg-6">
