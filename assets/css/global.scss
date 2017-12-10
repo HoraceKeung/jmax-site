@@ -132,10 +132,13 @@ button:disabled {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: opacity .15s ease-in-out;
+	transition: opacity .55s ease-in-out;
+	border:20px solid #000;
 }
 .overlay:hover{
 	opacity: 1;
+	border:20px solid #fff;
+	transition: opacity .55s ease-in-out;
 }
 .o-0 {
 	opacity: 0;
@@ -186,4 +189,10 @@ button:disabled {
 }
 .bg-black-footer {
 	background-color: var(--blackfooter);
+}
+.bordered-box {
+  border:2px solid #999;
+	background:#fff;
+	padding:10px;
+	box-shadow: 5px 5px;
 }

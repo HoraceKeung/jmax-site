@@ -6,11 +6,11 @@ module.exports = {
     ** Headers of the page
     */
     head: {
-        title: 'JMAX MEDIA:CHINA-UK Media Company | Video Production, Branding, Chinese Market Entry Strategy, Public Relationship',
+        title: 'JMAX MEDIA 吉木传媒',
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: 'JMAX MEDIA is a full service video production and graphic design company based in the UK and China. We specialise in creating original branding solutions that resonate and engage with an international audience.' }
+            { hid: 'description', name: 'description', content: 'JMAX MEDIA is a full service video production and branding company based in the UK and China. We specialise in creating original branding solutions that resonate and engage with an international audience.' }
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

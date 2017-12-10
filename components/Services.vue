@@ -30,8 +30,8 @@
 							<div>
 								<h3 class="text-uppercase pt-3">{{lang[s.header]}}</h3>
 								<h3 class="text-uppercase">—-</h3>
-								<div class="mb-3"><h5 v-for="t in s.text" class="mb-0 normalLH">{{lang[t]}}</h5></div>
-								<h5 class="normalLH mb-0 pb-1" v-for="k in s.keywords">- {{lang[k]}}</h5>
+								<div class="mb-3 bordered-box"><h5 v-for="t in s.text" class="mb-0 normalLH">{{lang[t]}}</h5></div>
+								<h5 class="normalLH mb-0 pb-1 " v-for="k in s.keywords">- {{lang[k]}}</h5>
 							</div>
 						</div>
 						<div :class="'col-lg-5 my-auto'+(index%2!==0?' d-lg-none':'')">
